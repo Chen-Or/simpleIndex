@@ -1,0 +1,87 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+	<title>Time</title>
+</head>
+
+<body background="1.jpg">
+	<p align="right"; style="padding: 50px 0 0 0">
+		<FONT style="FONT-SIZE: 45pt; font-weight: bold; COLOR: #001751; LINE-HEIGHT: 160%; FONT-FAMILY: 隶书;  ">
+		2021中考倒计时:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+		&nbsp; <br>
+			<span id="span_dt_dt" ></span>&nbsp;&nbsp;&nbsp;
+			<SCRIPT language=javascript> 
+				function show_date_time(){ 
+					window.setTimeout("show_date_time()", 1000); 
+					BirthDay=new Date("6-20-2021");//根据自己的要求修改倒计时终止时间“日-月-年”
+					today=new Date(); 
+					timeold=(BirthDay.getTime()-today.getTime()); 
+					sectimeold=timeold/1000;
+					secondsold=Math.floor(sectimeold); 
+					msPerDay=24*60*60*1000;
+					e_daysold=timeold/msPerDay;
+					daysold=Math.floor(e_daysold); 
+					e_hrsold=(e_daysold-daysold)*24; 
+					hrsold=Math.floor(e_hrsold); 
+					e_minsold=(e_hrsold-hrsold)*60; 
+					minsold=Math.floor((e_hrsold-hrsold)*60); 
+					seconds=Math.floor((e_minsold-minsold)*60); 
+					span_dt_dt.innerHTML="还有"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒"+"！" ;
+				}
+				show_date_time();
+			</SCRIPT>
+		</FONT>
+	</p>
+	<script>
+	    //指定标语的数目
+	    tips = new Array(41);
+	    //标语内容
+		    tips[0] = '与最好的自己<br />在六月里相逢'
+		    tips[1] = '今日用功 明日成功'
+		    tips[2] = '江东子弟多才俊<br />卷土重来未可知'
+		    tips[3] = '自信即巅峰！'
+		    tips[4] = '为自己的选择而负责！'
+		    tips[5] = '全力以赴 创造辉煌'
+		    tips[6] = '自律 努力 坚持'
+		    tips[7] = '好好学习 天天向上'
+		    tips[8] = '坚持就是胜利'
+		    tips[9] = '天才是1%的灵感<br />99%的汗水'
+		    tips[10] = '加油！加油！'
+		    tips[11] = '长风破浪会有时<br />直挂云帆济沧海'
+		    tips[12] = '只要努力就一定会成功'
+		    tips[13] = '一分耕耘 一分收获'
+		    tips[14] = '花花世界 静守己心'
+		    tips[15] = 'I can do all things！'
+		    tips[16] = '看似不起波澜的日复一日<br />会在某一天发现坚持的意义'
+		    tips[17] = '虚心万事能成<br />自满十事九空'
+		    tips[18] = '少年的书桌上<br />没有虚度的光阴'
+		    tips[19] = '书籍是人类进步的阶梯'
+		    tips[20] = '不要假装很努力<br />结果不会陪你演戏'
+		    tips[21] = '让刻苦成为习惯<br />用汗水浇灌未来'
+		    tips[22] = '追求客观真理和知识<br />是人的最高和永恒的目标'
+		    tips[23] = '南望王师又一年'
+		    tips[24] = '世界上最大的谎言<br />就是: 你不行'
+		    tips[25] = '书山有路勤为径<br />学海无涯苦作舟'
+		    tips[26] = '我们既是抵抗疯狂和危险的英雄<br />也是对抗自己的可怜虫'
+		    tips[27] = '黑发不知勤学早<br />白首方悔读书迟'
+		    tips[28] = '与最好的自己<br />在六月里相逢'
+		    tips[29] = '世上无难事<br />只怕有心人'
+		    tips[30] = '自信即巅峰！'
+		    tips[31] = '没有做得最好<br />只有做得更好'
+		    tips[32] = '你会一天比一天好 加油！'
+		    tips[33] = '书籍是人类进步的阶梯'
+		    tips[34] = '好好学习 天天向上'
+		    tips[35] = '不要放弃 只要再坚持一下<br />我们就能走出去了'
+		    tips[36] = '志当存高远'
+		    tips[37] = '越是得不到的 就越要去<br />努力争取 万一得到了呢！'
+		    tips[38] = '长风破浪会有时<br />直挂云帆济沧海'
+		    tips[39] = '好好学习 天天向上'
+		    tips[40] = '世上无难事<br />只怕有心人'
+		    tips[41] = '坚持就是胜利！'
+		    slogan_num = Math.floor(Math.random() * tips.length);//获取一个随机数
+		    window.document.write('<p align="right"; style=" FONT-SIZE: 55pt; font-weight: bold; COLOR: #FFFFFF; LINE-HEIGHT: 130%; FONT-FAMILY: KaiTi; padding:260px 170px 0 0"> <span>'+ tips[slogan_num] +'</span> </p>');//随机输出“数组[随机数]”的一条标语
+	</script>
+</body>
+
+</html>
