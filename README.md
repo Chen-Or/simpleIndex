@@ -1,3 +1,3 @@
 # timeClock
 
-https://ccjiahong.github.io/timeClock/
+https://c-22.github.io/timeClock/
